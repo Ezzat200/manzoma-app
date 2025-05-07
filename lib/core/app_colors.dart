@@ -11,6 +11,12 @@ static const Color azureBlue = Color(0xFF00A0FF);
 static const Color white = Color(0xFFFFFFFF);
 static const Color text = Color(0xFF414141);
 static const Color border = Color(0xFFE5E5E5);
+static const Color textDrwer = Color(0xFF7A7A7A);
+static const Color errorColor = Color(0xFFBA162F);
+static const Color mainText = Color(0xFF414042);
+
+
+
 
 
 

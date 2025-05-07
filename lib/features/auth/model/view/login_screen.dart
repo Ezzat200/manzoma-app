@@ -47,7 +47,8 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 20,),
             RememberMeCheckbox(),
             SizedBox(height: 36,),
-            CustomButton()
+            CustomButton(),
+            SizedBox(height: 20,),
             ],
           ),
                ),
