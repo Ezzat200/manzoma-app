@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:manzoma/core/app_colors.dart';
 import 'package:manzoma/core/widgets/custom_drwer_screen.dart';
+import 'package:manzoma/features/Statistics/model/view/Statistics_screen.dart';
+import 'package:manzoma/features/home/model/view/home_screen.dart';
+import 'package:manzoma/features/projects/model/view/favorite_project_screen.dart';
+import 'package:manzoma/features/projects/model/view/projects_screen.dart';
 
 class CustomDrwer extends StatelessWidget {
   const CustomDrwer({
@@ -49,24 +53,52 @@ class CustomDrwer extends StatelessWidget {
        padding: const EdgeInsets.symmetric(horizontal: 34),
        child: Column(
                   children: [
-                    CustomDrwerScreen(
-                      svgImage: 'assets/home.svg',
-                      screenName: 'Home',
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context) {
+                          return const HomeScreen();
+                        },));
+                      },
+                      child: CustomDrwerScreen(
+                        svgImage: 'assets/home.svg',
+                        screenName: 'Home',
+                      ),
                     ),
                     SizedBox(height: 33,),
-                    CustomDrwerScreen(
-                      svgImage: 'assets/Statistics.svg',
-                      screenName: 'Statistics',
+                    InkWell(
+                      onTap: () {
+                          Navigator.push(context,MaterialPageRoute(builder: (context) {
+                          return const StatisticsScreen();
+                        },));
+                      },
+                      child: CustomDrwerScreen(
+                        svgImage: 'assets/Statistics.svg',
+                        screenName: 'Statistics',
+                      ),
                     ),
                     SizedBox(height: 33,),
-                    CustomDrwerScreen(
-                      svgImage: 'assets/projects.svg',
-                      screenName: 'Projects',
+                    InkWell(
+                       onTap: () {
+                          Navigator.push(context,MaterialPageRoute(builder: (context) {
+                          return const ProjectsScreen();
+                        },));
+                      },
+                      child: CustomDrwerScreen(
+                        svgImage: 'assets/projects.svg',
+                        screenName: 'Projects',
+                      ),
                     ),
                     SizedBox(height: 33,),
-                    CustomDrwerScreen(
-                      svgImage: 'assets/Favorite Projects.svg',
-                      screenName: 'Favorite Projects',
+                    InkWell(
+                       onTap: () {
+                          Navigator.push(context,MaterialPageRoute(builder: (context) {
+                          return const FavoriteProjectScreen();
+                        },));
+                      },
+                      child: CustomDrwerScreen(
+                        svgImage: 'assets/Favorite Projects.svg',
+                        screenName: 'Favorite Projects',
+                      ),
                     ),
                     SizedBox(height: 33,),
                     CustomDrwerScreen(

@@ -21,7 +21,9 @@ class HomeScreen extends StatelessWidget {
 
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(kToolbarHeight),
-        child: CustomAppBar(),
+        child: CustomAppBar(
+          pageName: 'Home',
+        ),
       ),
 
       body: Padding(

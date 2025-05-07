@@ -5,9 +5,10 @@ import 'package:manzoma/core/app_colors.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
-    super.key,
+    super.key, required this.pageName, this.onPressed,
   });
-
+final String pageName;
+final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -36,8 +37,8 @@ class CustomAppBar extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 8),
-            const Text(
-              'Home',
+             Text(
+              pageName,
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
           ],
@@ -46,7 +47,7 @@ class CustomAppBar extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 10),
             child: IconButton(
-              onPressed: () {},
+              onPressed: onPressed,
               icon: SvgPicture.asset(
                 'assets/serch.svg',
                 color: AppColors.white,
