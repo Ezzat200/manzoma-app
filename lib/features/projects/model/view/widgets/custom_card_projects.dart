@@ -126,6 +126,7 @@ class CustomCardProjects extends StatelessWidget {
       ),
     ),
     
-          ]);
+          ]
+          );
   }
 }

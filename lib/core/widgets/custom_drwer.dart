@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:manzoma/core/app_colors.dart';
 import 'package:manzoma/core/widgets/custom_drwer_screen.dart';
+import 'package:manzoma/features/Reviews/model/view/reviews_screen.dart';
 import 'package:manzoma/features/Statistics/model/view/Statistics_screen.dart';
 import 'package:manzoma/features/home/model/view/home_screen.dart';
 import 'package:manzoma/features/projects/model/view/favorite_project_screen.dart';
 import 'package:manzoma/features/projects/model/view/projects_screen.dart';
+import 'package:manzoma/features/taskes/model/view/goalscorers_tasks.dart';
+import 'package:manzoma/features/taskes/model/view/taskes_screen.dart';
 
 class CustomDrwer extends StatelessWidget {
   const CustomDrwer({
@@ -101,14 +104,28 @@ class CustomDrwer extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 33,),
-                    CustomDrwerScreen(
-                      svgImage: 'assets/taskes.svg',
-                      screenName: 'Tasks',
+                    InkWell(
+                       onTap: () {
+                          Navigator.push(context,MaterialPageRoute(builder: (context) {
+                          return const TaskesScreen();
+                        },));
+                      },
+                      child: CustomDrwerScreen(
+                        svgImage: 'assets/taskes.svg',
+                        screenName: 'Tasks',
+                      ),
                     ),
                     SizedBox(height: 33,),
-                    CustomDrwerScreen(
-                      svgImage: 'assets/Reviews.svg',
-                      screenName: 'Reviews ',
+                    InkWell(
+                       onTap: () {
+                          Navigator.push(context,MaterialPageRoute(builder: (context) {
+                          return const ReviewsScreen();
+                        },));
+                      },
+                      child: CustomDrwerScreen(
+                        svgImage: 'assets/Reviews.svg',
+                        screenName: 'Reviews ',
+                      ),
                     ),
                     SizedBox(height: 33,),
                     CustomDrwerScreen(
