@@ -5,7 +5,9 @@ import 'package:manzoma/core/app_colors.dart';
 import 'package:manzoma/core/widgets/custom_drwer_screen.dart';
 import 'package:manzoma/features/Reviews/model/view/reviews_screen.dart';
 import 'package:manzoma/features/Statistics/model/view/Statistics_screen.dart';
+import 'package:manzoma/features/blogs/model/view/blogs_screen.dart';
 import 'package:manzoma/features/home/model/view/home_screen.dart';
+import 'package:manzoma/features/profile/model/view/profile_screen.dart';
 import 'package:manzoma/features/projects/model/view/favorite_project_screen.dart';
 import 'package:manzoma/features/projects/model/view/projects_screen.dart';
 import 'package:manzoma/features/taskes/model/view/goalscorers_tasks.dart';
@@ -128,14 +130,28 @@ class CustomDrwer extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 33,),
-                    CustomDrwerScreen(
-                      svgImage: 'assets/Blogs.svg',
-                      screenName: 'Blogs',
+                    InkWell(
+                       onTap: () {
+                          Navigator.push(context,MaterialPageRoute(builder: (context) {
+                          return const BlogsScreen();
+                        },));
+                      },
+                      child: CustomDrwerScreen(
+                        svgImage: 'assets/Blogs.svg',
+                        screenName: 'Blogs',
+                      ),
                     ),
                     SizedBox(height: 33,),
-                    CustomDrwerScreen(
-                      svgImage: 'assets/login.svg',
-                      screenName: 'Profile ',
+                    InkWell(
+                      onTap: () {
+                          Navigator.push(context,MaterialPageRoute(builder: (context) {
+                          return const ProfileScreen();
+                        },));
+                      },
+                      child: CustomDrwerScreen(
+                        svgImage: 'assets/login.svg',
+                        screenName: 'Profile ',
+                      ),
                     ),
                     SizedBox(height: 33,),
                   ],

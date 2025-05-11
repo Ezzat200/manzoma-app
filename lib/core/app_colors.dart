@@ -14,6 +14,8 @@ static const Color border = Color(0xFFE5E5E5);
 static const Color textDrwer = Color(0xFF7A7A7A);
 static const Color errorColor = Color(0xFFBA162F);
 static const Color mainText = Color(0xFF414042);
+static const Color backgroundCard= Color(0xFFF5F5F575);
+
 
 
 

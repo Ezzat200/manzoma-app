@@ -86,7 +86,7 @@ class LayoutScreen extends StatelessWidget {
                         ? AppColors.primaryColor
                         : AppColors.white     , // Set unselected icon color
                   ),
-                  label:'Login',
+                  label:'Profile',
                 ),
               ],
 
