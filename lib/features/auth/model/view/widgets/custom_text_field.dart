@@ -22,20 +22,20 @@ class customTextField extends StatelessWidget {
                          decoration: InputDecoration(
                            
                            border: OutlineInputBorder(
-                             borderSide: BorderSide(color: AppColors.text, width: 1.0),
+                             borderSide: BorderSide(color: Color(0xffE5E5E5), width: 1.0),
                              borderRadius: BorderRadius.circular(AppSize.borderRadius),
                            ),
                             enabledBorder:  OutlineInputBorder(
-                             borderSide: BorderSide(color: AppColors.text, width: 1.0),
+                             borderSide: BorderSide(color: Color(0xffE5E5E5), width: 1.0),
                              borderRadius: BorderRadius.circular(AppSize.borderRadius),
                            ),
                            
                             errorBorder: OutlineInputBorder(
-                             borderSide: BorderSide(color: AppColors.text, width: 1.0),
+                             borderSide: BorderSide(color: Color(0xffE5E5E5), width: 1.0),
                              borderRadius: BorderRadius.circular(AppSize.borderRadius),
                            ),
                               focusedBorder: OutlineInputBorder(
-                             borderSide: BorderSide(color: AppColors.text, width: 1.0),
+                             borderSide: BorderSide(color: Color(0xffE5E5E5), width: 1.0),
                              borderRadius: BorderRadius.circular(AppSize.borderRadius),
                            ),
                            

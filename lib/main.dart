@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
        // دعم تغيير اللغة
         builder: DevicePreview.appBuilder,     // دعم تغيير أبعاد الشاشة
         useInheritedMediaQuery: true,          // دعم التفاعل مع خصائص الجهاز المختار
-        home: const LayoutScreen(),
+        home: const LoginScreen(),
       ),
     );
   }
